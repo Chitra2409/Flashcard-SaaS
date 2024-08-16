@@ -19,13 +19,13 @@ import {
 export default function FlashCards() {
     const { isLoaded, isSignedIn, user } = useUser();
     const [flashcards, setFlashcards] = useState([]);
-    const [flashcardsDemo, setFlashcardsDEmo] = useState([
-        { name: "Theme 1" },
-        { name: "Theme 2" },
-        { name: "Theme 3" },
-        { name: "Theme 4" },
-        { name: "Theme 5" },
-    ]);
+    // const [flashcardsDemo, setFlashcardsDEmo] = useState([
+    //     { name: "Theme 1" },
+    //     { name: "Theme 2" },
+    //     { name: "Theme 3" },
+    //     { name: "Theme 4" },
+    //     { name: "Theme 5" },
+    // ]);
     const router = useRouter();
 
     useEffect(() => {
@@ -52,13 +52,14 @@ export default function FlashCards() {
         router.push(`/flashcard?id=${id}`);
     };
     return (
-        <Container width="100vw"  sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}} >
-            <Typography variant="h3" gutterBottom sx={{ marginTop: 10, fontWeight:800,  borderBottom: '1px solid #333' }}>Saved Flashcards</Typography>
-            <Grid container spacing={2} sx={{ width:"100vw", height:"50vh", display: 'flex', justifyContent: 'center' , mt:4 , alignItems:'center', backgroundColor:'#eee'}}>
+        <Container width="100vw"  sx={{display:'flex', mt:10, flexDirection:'column', justifyContent:'center', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)'}} >
+            <Typography variant="h3" gutterBottom sx={{ marginTop: 10, fontWeight:800,  borderBottom: '2px solid #333' }}>Saved Flashcards</Typography>
+            <Grid container  sx={{ width:"100%", height:"100vh" ,  mt:4, justifyContent:'center'}}>
                 {flashcards.map((flashcard, index) => (
-                    <Grid item xs={2} sm={2} md={2} lg={2} key={index} gap={10} columns={2} sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                    <Grid item xs={12} sm={6} md={6} lg={6} key={index} sx={{
+                        display:'flex', justifyContent:'center', alignItems:'center'}}>
                         <Slide direction={index % 2 === 0 ? 'right' : 'left'} in={true}>
-                            <Card sx={{ width: "20vw", height: "200px", gap:10}}>
+                            <Card sx={{ minWidth: "350px", height: "130px", gap:2}}>
                                 <CardActionArea
                                     onClick={() => {
                                         handleCardClick(flashcard.name);
