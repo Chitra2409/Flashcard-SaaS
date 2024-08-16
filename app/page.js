@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Head from "next/head"; // Correct import for Head
 import getStripe from "@/utils/get-stripe";
+// import getStripe from "../utils/get-stripe";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 // Importing Material-UI components
@@ -14,6 +15,7 @@ import {
   Box,
   Grid,
 } from "@mui/material";
+import Link from "next/link";
 export default function Home() {
   const handleSubmit = async () => {
     const checkoutSession = await fetch("/api/checkout_session", {
@@ -57,6 +59,7 @@ export default function Home() {
         <Button variant="contained" color="primary" sx={{ mt: 2 }}>
           Get Started
         </Button>
+        <Link href="/savedFlashCards">Saved</Link>
       </Box>
       <Box sx={{ textAlign: "center", my: 6 }}>
         <Typography variant="h4" components="h2" gutterBottom>
