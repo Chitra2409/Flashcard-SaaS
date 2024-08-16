@@ -52,16 +52,13 @@ export default function FlashCards() {
         router.push(`/flashcard?id=${id}`);
     };
     return (
-        <Container maxWidth="100vw" height="100vh" sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}} >
+        <Container width="100vw"  sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}} >
             <Typography variant="h3" gutterBottom sx={{ marginTop: 10, fontWeight:800,  borderBottom: '1px solid #333' }}>Saved Flashcards</Typography>
-            
-            <Grid container spacing={20} sx={{ mt: 4, height:"80vh", mb:10, display: 'flex', justifyContent: 'center' , alignItems:'center', gap:20, backgroundColor:'#eee'}}>
+            <Grid container spacing={2} sx={{ width:"100vw", height:"50vh", display: 'flex', justifyContent: 'center' , mt:4 , alignItems:'center', backgroundColor:'#eee'}}>
                 {flashcards.map((flashcard, index) => (
-
-                    <Grid item xs={12} sm={6} md={4} lg={2} key={index} gap={10} columns={2} sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-
+                    <Grid item xs={2} sm={2} md={2} lg={2} key={index} gap={10} columns={2} sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                         <Slide direction={index % 2 === 0 ? 'right' : 'left'} in={true}>
-                            <Card sx={{ minWidth: "20vw", height: "200px", gap:10}}>
+                            <Card sx={{ width: "20vw", height: "200px", gap:10}}>
                                 <CardActionArea
                                     onClick={() => {
                                         handleCardClick(flashcard.name);
