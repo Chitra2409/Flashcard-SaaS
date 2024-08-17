@@ -87,14 +87,6 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               
-              <Typography variant="body2" sx={{ color: '#5D4C46', mb: 2 }}>
-                Supported Files: <img src="/icons/pdf-icon.png" alt="PDF" style={{ marginRight: 8 }} />
-                <img src="/icons/ppt-icon.png" alt="PPT" style={{ marginRight: 8 }} />
-                <img src="/icons/doc-icon.png" alt="DOC" />
-              </Typography>
-              <Typography variant="body2" sx={{ color: '#5D4C46', mb: 2 }}>
-                or try
-              </Typography>
       
             </Grid>
           </Grid>
