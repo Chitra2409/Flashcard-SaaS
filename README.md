@@ -126,7 +126,6 @@ To start the production server, run:
 - **Stripe**: A payment processing platform used for handling subscriptions and secure payments.
 - **Firebase**: Provides authentication, database, and hosting solutions.
 - **OpenAI**: Powers the AI-based flashcard generation.
-- **Bootstrap**: Used for styling and responsive layout design.
 
 ## Deployment
 
