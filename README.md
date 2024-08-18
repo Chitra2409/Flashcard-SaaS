@@ -8,6 +8,7 @@
 
 - [Overview](#overview)
 - [Features](#features)
+- [Architecture](#architecture)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
@@ -39,6 +40,9 @@ This project is a web application that allows users to generate and manage flash
 
 - **Cross-Device Accessibility**: 
   Access flashcards anytime, anywhere, across all devices.
+
+## Architecture
+<img src="public/architecture.PNG" alt="architecture" >
 
 ## Getting Started
 
