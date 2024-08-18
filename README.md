@@ -124,7 +124,8 @@ To start the production server, run:
     npm start
     ```
 ## Demo Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c5c0Er1k18o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![Demo Video](https://img.youtube.com/vi/c5c0Er1k18o/0.jpg)](https://www.youtube.com/watch?v=c5c0Er1k18o)
 
 ## Technologies Used
 
