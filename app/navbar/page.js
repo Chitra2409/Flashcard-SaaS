@@ -63,61 +63,67 @@ const Navbar = () => {
           {/* Links and User Options */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <SignedOut>
-              <Button
-                href="sign-in"
-                sx={{
-                  color: "#5D4C46", // Consistent dark text color
-                  marginRight: 2,
-                  fontWeight: 500,
-                  textTransform: "none",
-                  borderRadius: "25px", // More rounded corners for a softer feel
-                  padding: "8px 20px",
-                  backgroundColor: "#FFD3B6", // Soft pastel background for button
-                  ":hover": {
-                    backgroundColor: "#FFB490", // Darker pastel orange on hover
-                    color: "#FFF", // White text on hover for contrast
-                  },
-                }}
-              >
-                Login
-              </Button>
-              <Button
-                href="sign-up"
-                sx={{
-                  color: "#FFF",
-                  background: "linear-gradient(135deg, #FF8B60, #FF6F61)", // Matching button background color
-                  padding: "8px 20px", // Larger padding for a more premium look
-                  borderRadius: "25px", // More rounded corners
-                  fontWeight: 500,
-                  textTransform: "none",
-                  ":hover": {
-                    backgroundColor: "#FF6F61", // Slightly darker hover effect
-                  },
-                }}
-              >
-                Sign Up
-              </Button>
+              <Link href="/sign-in">
+                <Button
+                  sx={{
+                    color: "#5D4C46", // Consistent dark text color
+                    marginRight: 2,
+                    fontWeight: 500,
+                    textTransform: "none",
+                    borderRadius: "25px", // More rounded corners for a softer feel
+                    padding: "8px 20px",
+                    backgroundColor: "#FFD3B6", // Soft pastel background for button
+                    ":hover": {
+                      backgroundColor: "#FFB490", // Darker pastel orange on hover
+                      color: "#FFF", // White text on hover for contrast
+                    },
+                  }}
+                >
+                  Login
+                </Button>
+              </Link>
+
+              <Link href="/sign-up">
+                <Button
+                  sx={{
+                    color: "#FFF",
+                    background: "linear-gradient(135deg, #FF8B60, #FF6F61)", // Matching button background color
+                    padding: "8px 20px", // Larger padding for a more premium look
+                    borderRadius: "25px", // More rounded corners
+                    fontWeight: 500,
+                    textTransform: "none",
+                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)", // More defined shadow for depth
+                    ":hover": {
+                      backgroundColor: "#FF4F41", // Slightly darker hover effect
+                    },
+                  }}
+                >
+                  Sign Up
+                </Button>
+              </Link>
             </SignedOut>
             <SignedIn>
-              <Button
-                href="/flashcards"
-                sx={{
-                  color: "#FFF",
-                  background: "linear-gradient(135deg, #FF8B60, #FF6F61)", // Gradient for a modern touch
-                  marginRight: 2,
-                  padding: "8px 20px", // Larger padding
-                  borderRadius: "25px", // Rounded corners
-                  // border: "#FF4F41",
-                  fontWeight: 600,
-                  textTransform: "none",
-                  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)", // More defined shadow for depth
-                  ":hover": {
-                    backgroundColor: "#FF4F41", // Stronger hover effect
-                  },
-                }}
-              >
-                My Collection
-              </Button>
+              <Link href="/flashcards">
+                <Button
+                  sx={{
+                    color: "#FFF",
+                    background: "linear-gradient(135deg, #FF8B60, #FF6F61)", // Gradient for a modern touch
+                    marginRight: 2,
+                    padding: "8px 20px", // Larger padding
+                    borderRadius: "25px", // Rounded corners
+                    // border: "#FF4F41",
+                    fontWeight: 500,
+                    textTransform: "none",
+                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)", // More defined shadow for depth
+                    ":hover": {
+                      backgroundColor: "#FF4F41", // Stronger hover effect
+                    },
+                  }}
+                >
+                  My Collection
+                </Button>
+              </Link>
+
               <Button
                 onClick={handleOpenUpgrade}
                 sx={{
@@ -126,7 +132,7 @@ const Navbar = () => {
                   marginRight: 2,
                   padding: "8px 20px", // Larger padding
                   borderRadius: "25px", // Rounded corners
-                  fontWeight: 600,
+                  fontWeight: 500,
                   textTransform: "none",
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)", // More defined shadow for depth
                   ":hover": {
