@@ -125,7 +125,7 @@ To start the production server, run:
     ```
 ## Demo Video
 
-[![Demo Video](https://drive.google.com/file/d/1dombUuWFM1zHIawsSyvWKS27-46_OVvB/view?usp=drive_link)
+[Demo Video](https://drive.google.com/file/d/1dombUuWFM1zHIawsSyvWKS27-46_OVvB/view?usp=drive_link)
 
 ## Technologies Used
 
