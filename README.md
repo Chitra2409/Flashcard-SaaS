@@ -13,7 +13,7 @@
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
+- [Demo Video](#demo-video)
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
@@ -123,6 +123,9 @@ To start the production server, run:
     ```bash
     npm start
     ```
+## Demo Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c5c0Er1k18o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Technologies Used
 
 - **Next.js**: A React framework for server-side rendering and static site generation.
